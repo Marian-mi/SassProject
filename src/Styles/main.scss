@@ -1,0 +1,26 @@
+@import './header.scss';
+@import './common.scss';
+@import './get-started.scss';
+@import './intro-vid-cont.scss';
+@import './Stats.scss';
+@import './services-intro.scss';
+@import './portofolio.scss';
+@import './quotes.scss';
+@import './team-members.scss';
+@import './gallery.scss';
+@import './contact.scss';
+@import './news-teller.scss';
+@import './footer.scss';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.app {
+    background-color: black;
+    height: 100px;
+}
+
+input:focus {
+    outline: none;
+}

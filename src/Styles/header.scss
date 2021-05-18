@@ -1,0 +1,65 @@
+@import './common.scss';
+.header {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: $lightboxshadow;
+    @include breakPointmax(600px) {
+        display: block;
+        > div, ul {
+            width: 100%;
+        }
+    }
+    &__logo {
+        height: 80px;
+        margin: auto 0; 
+        width: 25%;
+        display: flex;
+        img {
+            display: block;
+            margin: auto;
+        }
+    }
+}
+
+.navbar {
+    width: 60%;
+    margin: auto 0;
+    li {
+        display: inline-block;
+        padding: 25px 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #0c4b76;
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    > div {
+        display: inline-block;
+        position: relative;
+    }
+    li:first-child {
+        color: #37abc2;
+    }
+    &__dropdown {
+        position: absolute;
+        right: 5%;
+        background-color:rgba(255, 255, 255, 0.829);
+        box-shadow: $lightboxshadow;
+        border-radius: 0 0 10px 10px;
+        li {
+            text-align: center;
+            list-style-type: none;
+            padding: 15px 30px;
+            @include text(17);
+            color: $colordarkblue !important;
+            cursor: pointer;
+            display: block;
+        }
+       
+        li:hover {
+            background-color: rgba(128, 128, 128, 0.281);
+        }
+    }
+} 
+

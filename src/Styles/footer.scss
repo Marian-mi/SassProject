@@ -1,0 +1,62 @@
+.footer {
+    @include containers(white, center);
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+    justify-content: center;
+    > div {
+        width: 25%;
+        padding: 0 20px;
+        height: 100%;
+        min-width: 280px;
+        margin: 20px 0;
+    }
+    h3 {
+        @include title(18);
+        margin-bottom: 15px;
+    }
+}
+
+.useful-links, .services-links {
+    a {
+        display: block;
+        text-decoration: none;
+        @include text(16);
+        padding: 10px;
+        &::before {
+            content: ">";
+            color: $colorlightblue;
+            font-size: 18px;
+            padding: 0 10px;
+        }
+    }
+}
+
+.company-info {
+    p {
+        line-height: 25px;
+        @include text(15);
+        margin: 20px 0;
+    }
+}
+
+.socials {
+    @extend .company-info;
+    &__icon {
+        display: flex;
+        > div {
+            width: 18%;
+            margin: 0 5px;
+            height: 40px;
+            border-radius: 6px;
+            background-color: $colorlightblue;
+            display: flex;
+            svg {
+                font-size: 18px;
+                color: white;
+                margin: auto;
+            }
+        }
+    }
+}
+

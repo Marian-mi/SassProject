@@ -1,0 +1,85 @@
+.services {
+    @include containers(#f3fbfe, center);
+    h2 {
+        @include title(40);
+        margin-bottom: 20px;
+    }
+    p {
+        @include text(20);
+    }
+    > div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        > div:nth-child(1) {
+            svg {
+                color: #ff6d9f;
+            }
+        }
+        > div:nth-child(2) {
+            svg {
+                color: #f1bd05;
+            }
+        }
+        > div:nth-child(3) {
+            svg {
+                color: #88e1db;
+            }
+        }
+        > div:nth-child(4) {
+            svg {
+                color: #40d531;
+            }
+        }
+        > div:nth-child(5) {
+            svg {
+                color: #d1fb1e;
+            }
+        }
+        > div:nth-child(6) {
+            svg {
+                color: #437bf2;
+            }
+        }
+    }
+}
+.intro-cards {
+    width: 30%;
+    margin: 30px 15px;
+    display: flex;
+    text-align: left;
+    overflow: hidden;
+    background-color: white;
+    opacity: 0;
+    transition: 0.5s;
+    transform: scale(0.8);
+    padding: 25px;
+    min-width: 300px;
+    box-shadow: $lightboxshadow;
+    div:first-child {
+        width: 20%;
+        display: flex;
+        svg {
+            margin: auto 0;
+            font-size: 56px;
+            position: relative;
+            right: 40px;
+        }
+    }
+    div:last-child {
+        width: 80%;
+        h3 {
+            @include title(20);
+            color: rgba(0, 0, 0, 0.733);
+            margin-bottom: 10px;
+        }
+        p {
+            @include text(16);
+        }
+    }
+}
+
+.intro-cards__visible{
+    opacity: 1;
+    transform: scale(1);
+}

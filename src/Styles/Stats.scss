@@ -1,0 +1,55 @@
+.statics {
+    @include containers(white, center);
+    h2 {
+        @include title(40);
+        margin-bottom: 15px;
+    }
+    p {
+        @include text(22);
+    }
+    > div {
+        margin-top: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        > div {
+            width: 25%;
+            min-width: 80px;
+            margin: 15px 0;
+            h6 {
+                @include text(16);
+                color: grey;
+                margin-top: 15px;
+            }
+            p {
+                font-weight: 800;
+                color: $colorlightblue;
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    row-gap: 20px;
+    padding: 0 20px;
+    
+    &__image {
+        border: 1px so;
+        margin: 2%;
+        border: $lightborder;
+        box-shadow: $lightboxshadow;
+        padding: 30px 40px;
+        min-width: 170px;
+        width: 180px;
+        height: 110px;
+        img {
+            width: 100px;
+            height: 40px;
+        }
+    }
+}

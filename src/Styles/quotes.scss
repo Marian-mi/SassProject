@@ -1,0 +1,48 @@
+$quote-color: rgba(230, 243, 255, 0.747);
+.quotes {
+    @include containers(#213d49, center);
+    &__image {
+        width: 150px;
+        margin: auto;
+        height: 150px;
+        display: flex;
+        border-radius: 50%;
+        background-color: rgba(128, 128, 128, 0.39);
+        img {
+            margin: auto;
+            border-radius: 50%;
+            width: 85%;
+            height: 85%;
+        }
+    }
+    h3 {
+        @include title(28);
+        margin-top: 20px;
+        color: $quote-color;
+    }
+    &__profession {
+        @include text(16);
+        color: $quote-color;
+    }
+    &__text {
+        @include text(22);
+        color: $quote-color;
+        margin-top: 30px;
+    }
+    &__buttons {
+        width: 150px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        div {
+            width: 20px;
+            height: 20px;
+            border-radius: 50px;
+            background-color: $quote-color;
+        }
+        div:nth-child(2) {
+            background-color: $colorlightblue;
+        }
+    }
+}
